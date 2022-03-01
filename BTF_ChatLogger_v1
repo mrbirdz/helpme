@@ -2,7 +2,7 @@
 - Made By Mr. Birdz#3435
 --]]
 
-_G.webhook = "https://discord.com/api/webhooks/947142066520076408/Dq7f63IlRxMqgWqYGCqa0-nUbLtZzeW7SOv8Cmo1AA1i3r3WkEv8MeXE7Tr1-gH1TvER"
+_G.webhook = "WEBHOOK BURA"
 _G.disable_mentions = true -- true yapmanızı tavsiye ederiz
 _G.rank_info = true
 
