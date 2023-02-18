@@ -410,7 +410,7 @@ function library:CreateWindow(name, size, hidebutton)
     window.BackgroundImage.TileSize = UDim2.new(0, window.theme.tilesize, 0, window.theme.tilesize)
     updateevent.Event:Connect(function(theme)
         window.BackgroundImage.Image = theme.background or ""
-        window.BackgroundImage.ImageTransparency = window.BackgroundImage.Image ~= "" and 0 or 1
+        window.BackgroundImage.ImageTransparency = 0
         window.BackgroundImage.BackgroundColor3 = theme.backgroundcolor
         window.BackgroundImage.TileSize = UDim2.new(0, theme.tilesize, 0, theme.tilesize)
     end)
