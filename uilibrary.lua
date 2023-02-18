@@ -404,7 +404,7 @@ function library:CreateWindow(name, size, hidebutton)
     window.BackgroundImage.Position = window.BlackLine.Position + UDim2.fromOffset(0, 1)
     window.BackgroundImage.Size = UDim2.fromOffset(window.size.X.Offset, window.size.Y.Offset - window.TopBar.AbsoluteSize.Y - 1)
     window.BackgroundImage.Image = window.theme.background or ""
-    window.BackgroundImage.ImageTransparency = window.BackgroundImage.Image ~= "" and 0 or 1
+    window.BackgroundImage.ImageTransparency = 0
     window.BackgroundImage.ImageColor3 = Color3.new() 
     window.BackgroundImage.BackgroundColor3 = window.theme.backgroundcolor
     window.BackgroundImage.TileSize = UDim2.new(0, window.theme.tilesize, 0, window.theme.tilesize)
