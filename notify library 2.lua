@@ -95,7 +95,7 @@ function Nord:ApplyTheme(Theme, Frame)
     end
 end
 
-function Nord:Notify(Title, Message, Type, Duration, TextSize)
+function Nord:Notify(Title, Message, Type, Duration, TextSizeR)
     Nord["Config"] = { ["Theme"] = "Discord" }
 	local Type2Color = {['error'] = Color3.fromRGB(255, 87, 87), ['warn'] = Color3.fromRGB(255, 255, 127), ['success'] = Color3.fromRGB(85, 255, 127), ['normal'] = Color3.fromRGB(255, 255, 255)}
 	local Frame = New("Frame", {Name = "MainFrame", Parent = NotificationHolder, BackgroundColor3 = Color3.fromRGB(70, 70, 73),
@@ -107,7 +107,7 @@ function Nord:Notify(Title, Message, Type, Duration, TextSize)
 		Text = Title or "Nord", TextSize = 15, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
 	}); Nord:TextConstraint(Header);
 	local Msg = New("TextLabel", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.563, 0), Size = UDim2.new(0.927, 0, 0.5, 0), ZIndex = 2, Font = "Gotham",
-		Text = Message, TextSize = TextSize, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
+		Text = Message, TextSize = TextSizeR, TextXAlignment = "Left", TextScaled = true, TextColor3 = Color3.new(1, 1, 1)
 	}); Nord:TextConstraint(Msg);
 	local LineHolder = New("Frame", {Parent = Frame, BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.93, 0), Size = UDim2.new(0.9278, 0, 0, 1), ZIndex = 2})
 	New("UIListLayout", {Parent = LineHolder, HorizontalAlignment = "Left", VerticalAlignment = "Center"});
