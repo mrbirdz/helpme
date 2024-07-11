@@ -80,9 +80,7 @@ function library:CreateWatermark(name, position)
 
     watermark.main = Instance.new("ScreenGui", coregui)
     watermark.main.Name = "Watermark"
-    if syn then
-        syn.protect_gui(watermark.main)
-    end
+    protect_gui(watermark.main)
 
     if getgenv().watermark then
         getgenv().watermark:Remove()
@@ -232,9 +230,7 @@ function library:CreateWindow(name, size, hidebutton)
     window.Main = Instance.new("ScreenGui", coregui)
     window.Main.Name = name
     window.Main.DisplayOrder = 15
-    if syn then
-        syn.protect_gui(window.Main)
-    end
+    protect_gui(window.Main)
 
     if getgenv().uilib then
         getgenv().uilib:Remove()
